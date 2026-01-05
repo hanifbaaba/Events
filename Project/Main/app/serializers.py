@@ -5,7 +5,7 @@ from .models import Events
 class EventsSerializer(serializers.ModelSerializer):
 
     # user = serializers.ReadOnlyField(source='user.id')
-    photo_of_event = serializers.ImageField(required=False, allow_null=True)
+    # photo_of_event = serializers.ImageField(required=False, allow_null=True)
 
 
     class Meta:
