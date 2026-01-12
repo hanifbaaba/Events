@@ -8,7 +8,7 @@ class Events(models.Model):
     name_of_event = models.CharField(max_length=200)
     date_of_event = models.DateTimeField(blank=True,null=True)
     venue_of_event = models.TextField()
-    # photo_of_event = models.ImageField(upload_to="event_image/",blank=True,null=True) 
+    photo_of_event = models.ImageField(upload_to="event_image/",blank=True,null=True) 
     description_of_event = models.TextField(null=True, blank=True)
     number_of_tickets = models.PositiveIntegerField()
     price_of_tickets = models.DecimalField(decimal_places=2, max_digits=10, null=True,blank=True)
